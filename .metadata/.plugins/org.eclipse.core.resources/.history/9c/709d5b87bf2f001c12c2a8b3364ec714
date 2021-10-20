@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>tabs jQuery UI 예제</title>
+<style>
+
+</style>
+
+</head>
+
+<!-- 코딩 순서가 중요 -->
+<!--  jQuery 인클루드 -->
+<script src="js/jquery.js"></script>
+
+<!--  jQuery UI 인클루드 -->
+<script src="js/jquery.jquery-ui-1.8.16.custom.min.js"></script>    
+                                                                                  
+<script>
+	//문서가 읽어지면 웹에서 읽혀지고 나면 콜백함수 
+	$(document).ready(function(){
+		// $(selector).action(); => jQuery 기본 문법
+		$("#example").tabs();
+	});
+</script>
+
+<body>
+	<div id="example">
+		<ul>
+			<li><a href="#tab1">교보문고 추천도서</a></li>
+			<li><a href="#tab2">베스트셀러</a></li>
+			<li><a href="#tab3">신간도서</a></li>
+		</ul>
+		<div id="tab1">
+			<img src="images/달러구트꿈백화점.jpg" width="170" height="200"/>
+		</div>
+		<div id="tab2">
+			<img src="images/밝은밤.jpg" width="170" height="200"/>
+		</div>
+		<div id="tab3">
+			<img src="images/완전한행복.jpg" width="170" height="200"/>
+		</div>
+	</div>	
+</body>
+</html>

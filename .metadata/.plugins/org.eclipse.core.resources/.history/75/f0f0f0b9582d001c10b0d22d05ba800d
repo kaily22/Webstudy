@@ -1,0 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Member_control.jsp 파일 => MVC 패턴의 Controller</title>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ page import = "java.util.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>표현식 응용 예제</title>
+</head>
+<body>
+	<% 
+		String[] str = {"자바","HTML","CSS","JavaScript","React","Node.js"};
+	
+		Random rnd = new Random();
+		
+		int i = rnd
+	
+	%>
+</body>
+</html>

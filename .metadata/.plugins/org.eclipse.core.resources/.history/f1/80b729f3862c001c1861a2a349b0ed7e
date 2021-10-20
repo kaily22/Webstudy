@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script>
+	var msg = "-4차 산업혁명 '태풍'이 몰려온다. 인공지능, 빅데이터 IoT, 로봇 공학 등"
+	
+	for(i=0;i<60;i++){
+		msg=" " + msg
+	}
+	
+	function scrollTrend(){
+		document.myForm.trend.value = msg.substring(0,59)
+		msg = msg.substring(1,msg.length) + msg.substring(0,1)
+		clearTime = setTimeout("scrollTrend()",100)
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

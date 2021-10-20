@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>인증</title>
+</head>
+<body>
+	<% 
+		String[] id = {"hello123","hong","test1234"};
+		String[] pwd = {"1234","hong123","test!"};
+		
+		
+		request.getParameter("id");
+		request.getParameter("pwd");''
+	%>
+	
+	
+	
+</body>
+</html>

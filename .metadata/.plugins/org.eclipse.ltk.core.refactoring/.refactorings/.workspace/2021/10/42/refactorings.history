@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;회원가입 프로젝트&apos; to &apos;Membership_join&apos;" description="Rename resource &apos;회원가입 프로젝트&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/회원가입 프로젝트" name="Membership_join" stamp="1634171917292" updateReferences="true"/>
+</session>

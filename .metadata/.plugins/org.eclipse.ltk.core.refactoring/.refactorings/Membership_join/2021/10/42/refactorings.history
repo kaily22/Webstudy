@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;change_email.js, idCheck.js, juminCheck.js&apos; to &apos;js&apos;" description="Move 3 resources to &apos;js&apos;" destination="WebContent/js" element1="WebContent/change_email.js" element2="WebContent/idCheck.js" element3="WebContent/juminCheck.js" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="3" stamp="1634170992477" updateReferences="true"/>
+</session>

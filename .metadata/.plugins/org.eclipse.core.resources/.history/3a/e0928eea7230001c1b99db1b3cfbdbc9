@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>이벤트와 경고창을 나타내는 open 플러그인</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+
+	//open이라는 플러그인을 만들겠다.
+	$(function(){
+		$.fn.open = function(eventType, message){
+			
+		}
+	});
+</script>
+</head>
+<body>
+	<p><button class="btn1">버튼1</button></p>
+	<p><button class="btn1">버튼2</button></p>
+	<p><button class="btn1">버튼3</button></p>
+</body>
+</html>

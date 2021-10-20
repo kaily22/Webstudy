@@ -1,0 +1,10 @@
+/**
+ *  change_email.js 파일 => 이메일 도메인 '직접입력'처리
+ */
+
+
+	function change_email(){
+		var email_add = document.getElementById("#email_add");
+		 
+	}
+

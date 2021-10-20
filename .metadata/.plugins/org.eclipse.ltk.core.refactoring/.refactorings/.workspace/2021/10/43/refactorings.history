@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;1020_requestObject&apos; to &apos;1020_requestObjectEx&apos;" description="Rename resource &apos;1020_requestObject&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/1020_requestObject" name="1020_requestObjectEx" stamp="1634691577705" updateReferences="true"/>
+</session>

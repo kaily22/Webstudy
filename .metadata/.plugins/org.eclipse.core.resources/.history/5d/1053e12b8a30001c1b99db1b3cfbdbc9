@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!--  추가  -->
+<%@ page isErrorPage %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>error_page.jsp 페이지</title>
+</head>
+<!--  추가  -->
+<jsp:useBean id="now" class="java.util.Date"/>
+<body>
+	<div>
+		<h2>error_page.jsp 페이지</h2>
+		<hr>
+		<table>
+			<tr>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
