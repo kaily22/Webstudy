@@ -8,12 +8,13 @@ public class EmpVO {
 	
 	
 	//getter, setter 메소드
-	public int getEno() {
+	public int getEmpno() {
 		return empno;
 	}
-	public void setEno(int eno) {
+	public void setEmpno(int empno) {
 		this.empno = empno;
 	}
+
 	public String getEname() {
 		return ename;
 	}

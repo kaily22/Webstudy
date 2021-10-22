@@ -9,6 +9,8 @@ C:\DEV\Web_Study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\79146728.
 \File_uploadEx\src
 C:\DEV\Web_Study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3703018008.index
 \회원가입 프로젝트\src
+C:\DEV\Web_Study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4049063094.index
+\Model1_Board\src
 C:\DEV\Web_Study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2926312857.index
 \Test\src
 C:\DEV\Web_Study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\140216811.index

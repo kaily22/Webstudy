@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="회원가입 프로젝트">
-        <property name="context-root" value="회원가입_프로젝트"/>
-        <property name="java-output-path" value="/회원가입 프로젝트/build/classes"/>
-    </wb-module>
-</project-modules>

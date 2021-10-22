@@ -65,7 +65,7 @@
                   for(EmpVO vo: list) {
             %>
                   <tr>
-                     <td><%= vo.getEno() %></td>
+                     <td><%= vo.getEmpno() %></td>
                      <td><%= vo.getEname() %></td>
                      <td><%= vo.getPosition() %></td>
                   </tr>
