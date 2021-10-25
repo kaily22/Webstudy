@@ -1,6 +1,6 @@
 package user;
 
-public class UserDO {
+public class UserDO { //POJO 클래스
 	
 	//필드(프로퍼티, 중간 저장소)	
 	private String id;

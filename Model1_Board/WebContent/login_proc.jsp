@@ -4,7 +4,6 @@
 <%@ page import = "user.UserDO" %>
 <%@ page import = "user.UserDAO" %>
 
-
 <!--  로그인 인증 처리  -->
 <%   
 
@@ -27,6 +26,7 @@
 	if(user != null) {
 		//session에 id값 등록하기
 		session.setAttribute("IdKey", id);
+		
 		response.sendRedirect("getBoardList.jsp");
 // 		out.println("<script>alert('로그인 성공')</script>");
 	}else {

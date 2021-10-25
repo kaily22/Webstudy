@@ -1,12 +1,17 @@
 <%@page import="javax.naming.directory.SearchControls"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" errorPage = "error.jsp"%>
+
 <!--추가 -->
 <%@ page import = "board.BoardDO" %>
 <%@ page import = "board.BoardDAO" %>
 <%@ page import = "java.util.List" %>
 
-<% request.setCharacterEncoding("UTF-8"); 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<% 
+
+	request.setCharacterEncoding("UTF-8"); 
 
 	String searchField = "";  	//검색 대상 즉 "제목" or "작성자"
 	String searchText = "";		//검색 내용
@@ -50,8 +55,8 @@
 	<div id="div_box">
 		<h1>전체 게시글 목록 보기</h1>
 		<h3>${IdKey}님 환영합니다. &nbsp;&nbsp;&nbsp;<a href="logout_proc.jsp">로그아웃</a></h3>
-		<form name="" method="POST" action="getBoardList.jsp">
-			<p>총 게시글 : ${totalList}</p>
+		<form name="boardListForm" method="POST" action="getBoardList.jsp">
+			<p>총 게시글 : ${totalList}건</p>
 			<table border = "1" cellpadding="0" cellspacing="0" width="700">
 				<tr>
 					<td align = "right">
@@ -74,17 +79,30 @@
 		 		<th bgcolor = "orange" width="100">조회수</th>
 		 	</tr>
 		 	
-		 	<%
-		 		for(BoardDO board: boardList) {
-		 	%>
-		 			<tr>
-		 			 	<td align = "center"><%= board.getSeq() %></td>
-		 			 	<td align = "left"><a href="getBoard.jsp?seq=<%=board.getSeq() %>"><%= board.getTitle() %></a></td>
-		 			 	<td align = "center"><%= board.getWriter() %></td>
-		 			 	<td align = "center"><%= board.getRegdate() %></td>
-		 			 	<td align = "center"><%= board.getCnt() %></td>
+<%-- 		 	<% --%>
+<!-- 		 		for(BoardDO board: boardList) { -->
+<%-- 		 	%> --%>
+<!-- 		 			<tr> -->
+<%-- 		 			 	<td align = "center"><%= board.getSeq() %></td> --%>
+<%-- 		 			 	<td align = "left"><a href="getBoard.jsp?seq=<%=board.getSeq() %>"><%= board.getTitle() %></a></td> --%>
+<%-- 		 			 	<td align = "center"><%= board.getWriter() %></td> --%>
+<%-- 		 			 	<td align = "center"><%= board.getRegdate() %></td> --%>
+<%-- 		 			 	<td align = "center"><%= board.getCnt() %></td> --%>
+<!-- 		 			</tr> -->
+<%-- 		 	<% } %> --%>
+
+		<%-- 표현언어와 JSTL을 적용하여 소스 변경요!! --%>
+		<c:forEach var="board" items="${boardList}">
+			<tr> 
+		 			 	<td align = "center">${board.seq}</td>
+		 			 	<td align = "left"><a href="getBoard.jsp?seq=${board.seq}">${board.title}</a></td>
+		 			 	<td align = "center">${board.writer}</td>
+		 			 	<td align = "center">${board.regdate}</td>
+		 			 	<td align = "center">${board.cnt}</td>
 		 			</tr>
-		 	<% } %>
+		</c:forEach>
+		
+
 		</table>
 		<br>
 		<a href="insertBoard.jsp">새 게시글 등록</a>&nbsp;&nbsp;&nbsp;
